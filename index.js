@@ -7,7 +7,7 @@
 /**
  * Adds a copy button to highlightjs code blocks
  */
-class CopyButtonPlugin {
+export class CopyButtonPlugin {
   /**
    * Create a new CopyButtonPlugin class instance
    * @param {Object} [options] - Functions that will be called when a copy event fires
@@ -71,14 +71,13 @@ class CopyButtonPlugin {
   }
 }
 
-module.exports = CopyButtonPlugin;
 
 /**
  * Basic support for localization. Please submit a PR
  * to help add more languages.
  * https://github.com/arronhunt/highlightjs-copy/pulls
  */
-const locales = {
+export const locales = {
   en: ["Copy", "Copied!", "Copied to clipboard"],
   es: ["Copiar", "Copiado!", "Copiado al portapapeles"],
   fr: ["Copier", "Copié!", "Copié dans le presse-papier"],
@@ -89,6 +88,7 @@ const locales = {
   zh: ["复制", "已复制!", "已复制到剪贴板"],
   "zh-tw": ["複製", "已複製!", "已複製到剪貼簿"],
 };
+
 
 /**
  * @typedef {function} CopyCallback
